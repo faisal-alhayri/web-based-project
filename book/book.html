@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رحلتي للسياحة وسفر</title>
+    <script defer src="java.js"></script>
+</head>
+<main>
+
+<body >
+    <header>
+        <section id="head1">
+            <img id="gg" src="../pictures/Logo.jpeg" class="img-fluid" alt="وصف الصورة">
+            <h1 id="title">مرحباً بكم في</h1>
+            <h1 id="title">رحلتي للسياحة والسفر</h1>
+            <nav>
+                <a href="../index.html">الصفحة الرئيسية</a>
+                <a href="../Navbar/Products.html">منتجات</a>
+                <a href="../Navbar/AboutUs.html">من نحن</a>
+                <a href="../Navbar/Sources.html">المصادر</a>
+                <a href="../Navbar/Contact_Us.html">تواصل معنا</a>
+                <a href="../Navbar/Review.html">قيمنا</a>
+                <br><br><br>
+            </nav>
+        </section>
+    </header>
+
+    <p id="time"></p>
+
+    <form>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <label>المنطقة</label>
+                    <input type="text" id="locationInput" readonly>
+                </div>
+                <div class="col">
+                    <label>سعر الرحلة</label>
+                    <input type="text" id="priceSpan" readonly>
+                </div>
+                <div class="col">
+                    <label>الانطلاق</label>
+                    <input type="text" id="start" readonly>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <p>اختر درجة الرحلة:</p>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <input type="radio" id="standard" name="T" value="1" checked>
+                    <label>اساسي - standard</label>
+                </div>
+                <div class="col">
+                    <input type="radio" id="economic" name="T" value=".75">
+                    <label>اقتصادي - economic</label>
+                </div>
+                <div class="col">
+                    <input type="radio" id="vip" name="T" value="2">
+                    <label>فاخر - VIP</label>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <p>إضافات:</p>
+        <input type="checkbox" id="extraMeal" name="addons" value="2.5">
+        <label>وجبة غداء إضافية</label><br>
+        <input type="checkbox" id="tourGuide" name="addons" value="25">
+        <label>دليل سياحي مرافق</label><br>
+        <input type="checkbox" id="fiveStarHotel" name="addons" value="100">
+        <label>فندق خمس نجوم</label>
+        <br><br>
+        <p>التسجيل:</p>
+        <label>الاسم الرباعي&nbsp;</label>
+        <input type="text" id="fullName">
+        <span id="fullNameError" class="error" style="color:red;"></span><br><br>
+        <label>الرقم الوطني&nbsp;&nbsp;</label>
+        <input type="text" id="nationalID">
+        <span id="nationalIDError" class="error" style="color:red;"></span><br><br>
+        <label>رقم الهاتف&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" id="phoneNumber">
+        <span id="phoneNumberError" class="error" style="color:red;"></span><br><br>
+        <label>عدد الأشخاص</label>
+        <input type="number" id="numberOfPeople">
+        <span id="numberOfPeopleError" class="error" style="color:red;"></span><br><br>
+        <p>معلومات الحجز</p>
+        <textarea id="bookingInfo" rows="10" cols="50" readonly></textarea><br>
+        <input type="button" value="احسب التكلفة النهائية" onclick="validateForm()">
+       
+        <br><br>
+        <input type="checkbox" id="terms" value="agree">
+        <label>أوافق على الشروط و الاحكام</label><br><br>
+    </form>
+    <br><br>
+    <footer>
+        <p>حقوق النشر © 2023 موقع سياحة وسفر</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+</main>
+
+</html>
